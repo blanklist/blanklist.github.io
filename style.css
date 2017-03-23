@@ -8,6 +8,7 @@
   background-position: center;
   min-height: 40%;
   position: relative;
+  top: 15px;
 }
 
 h1 {
@@ -21,7 +22,7 @@ header h2 {
 	text-align: center;
 	position: absolute;
 	bottom: 0px;
-	left: 20%;
+  left: 20%;
 	right: 20%;
 	color: #FC4A1A;
   font-size: 1.5em;
@@ -40,21 +41,24 @@ body {
   align-content: space-between;
 }
 
-#left {
+.column {
   width: 40%;
   flex-basis: auto;
 	margin: 20px;
   padding: 5px;
 }
 
-#right {
+.column #Shoo-face {
+  width: 80%;
+}
+/*#right {
   width: 40%;
   flex-basis: auto;
 	margin: 20px;
   padding: 5px;
-}
+}*/
 
-#left img {
+.column img {
   width: 90%;
   margin-left: auto;
   margin-right: auto; 
@@ -63,14 +67,14 @@ body {
   box-shadow: 10px 10px 5px #07889B;
 }
 
-#right img {
+/*#right img {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
   background-color: #373737;
   box-shadow: 10px 10px 5px #07889B;
-}
+}*/
 
 form {
   display: block;
@@ -86,4 +90,22 @@ a:link {
 
 a:visited {
   color: hotpink;
+}
+
+@media (max-width: 800px) {
+  #container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+  }
+  .column #Shoo-face {
+    width: 125%;
+  }
+  .column img {
+    width: 140%;
+    padding: 5px;
+  }
+  #top {
+    min-height: 20%;
+  }
 }
