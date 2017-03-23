@@ -6,9 +6,10 @@
   background-image: url("snooze.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 40%;
+  min-height: 400px;
   position: relative;
   top: 15px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 h1 {
@@ -21,7 +22,7 @@ h1 {
 header h2 {
 	text-align: center;
 	position: absolute;
-	bottom: 0px;
+	bottom: -20px;
   left: 20%;
 	right: 20%;
 	color: #FC4A1A;
@@ -46,6 +47,8 @@ body {
   flex-basis: auto;
 	margin: 20px;
   padding: 5px;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 1.2em;
 }
 
 .column #Shoo-face {
@@ -88,6 +91,8 @@ body {
 
 form {
   display: block;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 1.2em;
 }
 
 h3 {
