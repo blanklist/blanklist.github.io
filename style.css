@@ -49,8 +49,18 @@ body {
 }
 
 .column #Shoo-face {
-  width: 80%;
+  width: 100%;
 }
+
+.column #Shoo-face:hover {
+  content: url("Shoo-surprise.jpg");
+  width: 100%;
+}
+
+.column #Y-face:hover {
+  content: url("Y-closeup.jpg");
+}
+
 /*#right {
   width: 40%;
   flex-basis: auto;
