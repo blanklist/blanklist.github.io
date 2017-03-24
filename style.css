@@ -10,13 +10,16 @@
   position: relative;
   top: 15px;
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  /*text-shadow: 2px 2px black;*/
+  color: #FC4A1A;
 }
 
 h1 {
 	text-align: center;
-	color: #FC4A1A;
+	/*color: #FC4A1A;*/
 	top: 0px;
   font-size: 3em;
+  text-shadow: 2px 2px black;
 }
 
 header h2 {
@@ -25,8 +28,9 @@ header h2 {
 	bottom: -20px;
   left: 20%;
 	right: 20%;
-	color: #FC4A1A;
+	/*color: #FC4A1A;*/
   font-size: 1.5em;
+  text-shadow: 1px 1px black;
 }
 
 body {
@@ -34,12 +38,14 @@ body {
 }
 
 #container {
+  margin-left: 75px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
   align-content: space-between;
+  text-shadow: .4px .4px #FC4A1A;
 }
 
 .column {
@@ -51,13 +57,8 @@ body {
   font-size: 1.2em;
 }
 
-.column #Shoo-face {
-  width: 100%;
-}
-
 .column #Shoo-face:hover {
   content: url("Shoo-surprise.jpg");
-  width: 100%;
 }
 
 .column #Y-face:hover {
@@ -72,7 +73,7 @@ body {
 }*/
 
 .column img {
-  width: 90%;
+  width: 80%;
   margin-left: auto;
   margin-right: auto; 
   padding: 10px;
@@ -110,17 +111,29 @@ a:visited {
 @media (max-width: 800px) {
   #container {
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: stretch;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: -100px;
   }
-  .column #Shoo-face {
-    width: 125%;
-  }
+
+/*  .column #Shoo-face {
+    width: 100%;
+  }*/
+
   .column img {
     width: 140%;
     padding: 5px;
   }
   #top {
-    min-height: 20%;
+    min-height: 200px;
   }
+}
+
+.success {
+  background: #4ABDAC;
+  text-align: center;
+  padding-top: 100px;
+  text-shadow: 1px 1px #FC4A1A;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 1.4em;
 }
